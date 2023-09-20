@@ -1,0 +1,61 @@
+//
+//
+// THEME MODE
+//
+//
+.theme{
+    background-color: var(--C1);
+    width: clamp(30px, calc((60 / $Width) * 100vw), 60px);
+    height: clamp(30px, calc((60 / $Width) * 100vw), 60px);
+    border-radius: 50%;
+    border: 2px solid var(--C6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  
+  .theme::before{
+    content: "";
+    font-family: fontAwesome;
+    color: var(--C6);
+    z-index: 10;
+    transition: 0.5s;
+    font-size: clamp(12.5px, calc((25 / $Width) * 100vw), 25px);
+  }
+  
+  
+  .theme:hover::before {
+    color: var(--C8);
+    transition: 0s;
+    font-size: clamp(12.5px, calc((25 / $Width) * 100vw), 25px);
+    font-weight: 900;
+  }
+  
+  
+  .theme::after{
+    content: "";
+    position: absolute;
+    width: clamp(30px, calc((60 / $Width) * 100vw), 60px);
+    height: clamp(30px, calc((60 / $Width) * 100vw), 60px);
+    background: var(--C9);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  
+  .theme:hover::after {
+    transform: scale(1.05);
+  }
+  
+  
+  .dark::before{
+    content: "\f185";
+  }
+  
+  .light::before{
+    content: "\f186";
+  }

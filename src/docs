@@ -1,0 +1,14 @@
+    
+// Permet d'additionner les class   
+//     "clsx": "^1.2.1",
+
+
+// Permet d'installer react    
+//     "gh-pages": "^5.0.0",
+
+
+// Permet d'ajouter un id unique lorsqu'on génère un map et de le typer.
+//     "@types/uuid": "^9.0.1",
+//     "uuidv4": "^6.2.13" 
+
+//import {v4 as uuidv4} from "uuid"; 
