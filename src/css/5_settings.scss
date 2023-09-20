@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    @extend %center;
+    flex-direction: column;
+    background: var(--C1);
+    color: var(--C2);
+    font-weight: 500;
+    transition: background .5s;
+    //pointer-events:none;
+    //user-select:none;  
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+a:visited {
+    color: transparent;
+}
+
+input{
+    outline: none;
+}
+
+button{
+  border: none;
+}
+//
+//
+// ERROR
+//
+//
+.error{
+    position: relative;
+    height: clamp(5px, calc(($Height / $Width) * 100vw), calc($Height * 1px));
+    width: clamp(500px, calc(($Width / $Width) * 100vw), calc($Width * 1px));
+    @extend %center;
+    flex-direction: column;
+    gap: clamp(5px, calc((60 / $Width) * 100vw), 60px);
+    text-align: center;
+    background: var(--C1);    
+}
+
+.error .theme{
+    position: absolute;
+    top: clamp(5px, calc((60 / $Width) * 100vw), 20px);
+    right: clamp(5px, calc((60 / $Width) * 100vw), 20px);
+
+}
+
+.error .backHomeError404{
+    position: relative;
+    color: transparent;
+    &:before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--C7);
+    border-right: 2px solid var(--C6);
+    text-shadow: 0 0 10px var(--C7);
+    animation: script 12s steps(str-length(attr(data-text))) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+}
+
+// .error .backHomeError404:hover::before{
+//     animation: none;
+//     width: 100%;
+// }
+
+
+
+@keyframes script{
+    0%{
+      width: 0;
+    }
+    45%{
+      width: 100%;
+    }
+    
+      55%{
+      width: 100%;
+    }
+    
+    100%{
+      width: 0;
+    }
+  }

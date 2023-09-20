@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+//
+//
+// HEIGHT
+//
+//
+$Height: 1000;
+$Width: 2000;
+$LineH: 48;
+
+.typo-h0{
+    font-size: clamp(50px, calc((400 / $Width) * 100vw), 400px);
+    line-height: clamp(5px, calc((300 / $Width) * 100vw), calc(300* 1px));
+    letter-spacing: clamp(0px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+}
+
+.typo-h1{
+    font-size: clamp(15px, calc((60 / $Width) * 100vw), 60px);
+    line-height: clamp(5px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(0px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+}
+
+.typo-h2{
+    font-size: clamp(15px, calc((50 / $Width) * 100vw), 50px);
+    line-height: clamp(25px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(3px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 900;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h3{
+    font-size: clamp(15px, calc((40 / $Width) * 100vw), 40px);
+    line-height: clamp(18px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(2.5px, calc((10 / $Width) * 100vw), 10px) ;
+    font-weight: 650;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h4{
+    font-size: clamp(11px, calc((30 / $Width) * 100vw), 30px);
+    line-height: clamp(10px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(0px, calc((3 / $Width) * 100vw), 3px) ;
+    font-weight: 600;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h5{
+    font-size: clamp(8px, calc((25 / $Width) * 100vw), 25px);
+    line-height: clamp(24px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(1px, calc((5 / $Width) * 100vw), 5px);
+    font-weight: 600;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h6{
+    font-size: clamp(8px, calc((20 / $Width) * 100vw), 20px);
+    line-height: clamp(12px, calc((40 / $Width) * 100vw), calc(40 * 1px));
+    letter-spacing: clamp(0px, calc((5 / $Width) * 100vw), 3px) ;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h7{
+    font-size: clamp(8px, calc((18 / $Width) * 100vw), 18px);
+    line-height: clamp(11px, calc((26 / $Width) * 100vw), calc(26 * 1px));
+    letter-spacing: clamp(0px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h8{
+    font-size: clamp(6px, calc((15 / $Width) * 100vw), 15px);
+    line-height: clamp(9px, calc((20 / $Width) * 100vw), calc(20 * 1px));
+    letter-spacing: clamp(0px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h9{
+    font-size: clamp(5px, calc((10 / $Width) * 100vw), 10px);
+    line-height: clamp(5px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(0px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+}
+.typo-h10{
+    font-size: clamp(5px, calc((8 / $Width) * 100vw), 8px);
+    line-height: clamp(5px, calc(($LineH / $Width) * 100vw), calc($LineH * 1px));
+    letter-spacing: clamp(0px, calc((1 / $Width) * 100vw), 10px) ;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+}
+//
+//
+// COLOR
+//
+//
+$delaisColor: .5s;
+.C-black{
+    color: #000000;
+}
+.C-white{
+    color: #ffffff;
+}
+.C1{
+    color: var(--C1);
+    transition: color $delaisColor;
+}
+.C2{
+    color: var(--C2);
+    transition: color $delaisColor;
+}
+.C3{
+    color: var(--C3);
+    transition: color $delaisColor;
+}
+.C4{
+    color: var(--C4);
+    transition: color $delaisColor;
+}
+.C5{
+    color: var(--C5);
+    transition: color $delaisColor;
+}
+.C6{
+    color: var(--C6);
+    transition: color $delaisColor;
+}
+.C7{
+    color: var(--C7);
+    transition: color $delaisColor;
+}
+.C8{
+    color: var(--C8);
+    transition: color $delaisColor;
+}
+//
+//
+// TEXT
+//
+//
+.maj{
+    text-transform: uppercase;
+}
+.min{
+    text-transform: lowercase;
+}
