@@ -18,10 +18,10 @@ useEffect(() => {
   document.querySelector("html")?.setAttribute("data-theme", `${themeMode}`);
   }else{
     localStorage.setItem("themeMode", "dark");
-    localStorage.setItem("favicon", "icon-st-b.svg");
+    localStorage.setItem("favicon", "icon-st-b-a65a4ed3.svg");
     document.querySelector("html")?.setAttribute("data-theme", "dark");
     setThemeMode("dark");
-    setFavicon("icon-st-b.svg");
+    setFavicon("icon-st-b-a65a4ed3.svg");
   }
 }, [themeMode, favicon]);
 //
@@ -29,10 +29,10 @@ useEffect(() => {
   const ThemeModeToggle = () => {
     const themeModeStorage = localStorage.getItem("themeMode");
     if (themeModeStorage === "dark") {
-      setFavicon("icon-st-w.svg");
+      setFavicon("icon-st-w-c02bf0a3.svg");
       setThemeMode(`light`);      
     } else {
-      setFavicon("icon-st-b.svg");
+      setFavicon("icon-st-b-a65a4ed3.svg");
       setThemeMode(`dark`);   
     }
   };
