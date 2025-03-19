@@ -26,6 +26,7 @@ import { BiMap } from "react-icons/bi";
 import { IoMdSchool } from "react-icons/Io";
 import { SiRedux } from "react-icons/si"
 import { GrMysql } from "react-icons/gr"
+import { TbBrandNextjs } from "react-icons/tb";
 //
 //
 //
@@ -109,8 +110,8 @@ export const framework: linksProps[] = [
     icon: { icon: SiTypescript },
   },
   {
-    label: "React",
-    icon: { icon: FaReact },
+    label: "Next",
+    icon: { icon: TbBrandNextjs   },
   },
   {
     label: "Redux",
@@ -129,8 +130,8 @@ export const framework: linksProps[] = [
     icon: { icon: FaNodeJs },
   },
   {
-    label: "MongoDB",
-    icon: { icon: SiMongodb },
+    label: "MySQL",
+    icon: { icon: GrMysql },
   },
   {
     label: "Express",
@@ -303,6 +304,18 @@ export const projets: projectProps[] = [
     text:(<>Voici mon deuxième portfolio après quelques mois de formation chez OCR. J'ai tenté de réunir un maximum de compétence avec diverses animations (aucun framework d'animation utilisé) et la meilleur qualité de code possible (claire, évolutif et maintenable dans le temps).</>),
     image:`${img}Portfolio.png`,
     icon:`${icon}Portfolio.svg`,
+  },
+  {
+    label: "Miam Miam",
+    framework: [{
+      icon: [FaSass, FaReact, SiTypescript, SiRedux, FaNodeJs, GrMysql],
+      name:["sass", "react", "typescript", 'redux', "node.js", "mysql"]
+     }],
+    url:"https://youtu.be/n0g97rHkMho",
+    code:`${code}MiamMIam`,
+    text:(<>Projet Personnel: Application web de recette participatif permettant aux utilisateurs de gérer précisément leurs consommation macro et micro nutriment de leur plat favoris de façon journalier à mensuel.</>),
+    image:`${img}Miam-Miam.png`,
+    icon:`${icon}Miam-Miam.svg`,
   },
 ];
 

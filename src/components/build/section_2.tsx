@@ -43,8 +43,8 @@ export default function Section_2() {
   //
   // DATAS DYNAMIQUES
   //
-  const [data_projet, setData_projet] = useState(projets[4]);
-  const [data_wait, setData_wait] = useState(projets[4]);
+  const [data_projet, setData_projet] = useState(projets[13]);
+  const [data_wait, setData_wait] = useState(projets[13]);
   const choose_projet = (data: string) => {
     const projet = projets.find((projet) => projet.label === data);
     if (projet) {
@@ -89,8 +89,8 @@ export default function Section_2() {
   ));
 //
   const button_prenium = [
+    projets[13].label,
     projets[4].label,
-    projets[3].label,
     projets[11].label,
   ].map((item, index) => (
     <div className="anim_visible_button" key={index}>
