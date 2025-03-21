@@ -25,7 +25,7 @@ export default function Section_1() {
   // ANIMATION MOUSE FRAMEWORK
   //
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
-//
+  //
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth > 768);
@@ -35,31 +35,31 @@ export default function Section_1() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-//
-useEffect(() => {
-  const position = document.documentElement;
-  
-  if (isDesktop) {
-    const mouseMoveHandler = (e: MouseEvent) => {
-      const max = 100;
-      const min = -100;
-      let x = e.pageX * 0.2 - window.innerWidth / 6.62;
-      let y = e.pageY * 0.2 - window.innerHeight / 10.8;
-      x = Math.max(Math.min(x, max), min);
-      y = Math.max(Math.min(y, max), min);
-      position.style.setProperty("--x", x + "px");
-      position.style.setProperty("--y", y + "px");
-    };
-    
-    position.addEventListener("mousemove", mouseMoveHandler);
-    return () => {
-      position.removeEventListener("mousemove", mouseMoveHandler);
-    };
-  } else{
-    position.style.setProperty("--x", "8px");
-    position.style.setProperty("--y", "32px");
-  }
-}, [isDesktop]);
+  //
+  useEffect(() => {
+    const position = document.documentElement;
+
+    if (isDesktop) {
+      const mouseMoveHandler = (e: MouseEvent) => {
+        const max = 100;
+        const min = -100;
+        let x = e.pageX * 0.2 - window.innerWidth / 6.62;
+        let y = e.pageY * 0.2 - window.innerHeight / 10.8;
+        x = Math.max(Math.min(x, max), min);
+        y = Math.max(Math.min(y, max), min);
+        position.style.setProperty("--x", x + "px");
+        position.style.setProperty("--y", y + "px");
+      };
+
+      position.addEventListener("mousemove", mouseMoveHandler);
+      return () => {
+        position.removeEventListener("mousemove", mouseMoveHandler);
+      };
+    } else {
+      position.style.setProperty("--x", "8px");
+      position.style.setProperty("--y", "32px");
+    }
+  }, [isDesktop]);
   //
   // BUILDER
   //
@@ -94,13 +94,17 @@ useEffect(() => {
       {/* - - - - - - - - - */}
       {/* - TEXT VERTICAL - */}
       {/* - - - - - - - - - */}
-      <Typo 
-      balise="span" 
-      size="h2" 
-      className="accueil" 
-      transform="maj"
-      children="Bienvenu"
+      <Typo
+        balise="span"
+        size="h2"
+        className="accueil"
+        transform="maj"
+        children="Bienvenu"
       />
+      {/* - - - - - - - - - */}
+      {/* - IMG SCROLL - */}
+      {/* - - - - - - - - - */}
+      <img src="public\assets\scroll.png" alt="scroll" className="scroll" />
       {/* - - - - - - - - - */}
       {/* - LOGO FLOTANT - */}
       {/* - - - - - - - - - */}

@@ -91,7 +91,7 @@ export default function Section_2() {
   const button_prenium = [
     projets[13].label,
     projets[4].label,
-    projets[11].label,
+    projets[9].label,
   ].map((item, index) => (
     <div className="anim_visible_button" key={index}>
       <Button

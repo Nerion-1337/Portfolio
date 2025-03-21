@@ -109,7 +109,7 @@ filter: blur(2px);
 
 .section1 .accueil{
     position: absolute;
-    bottom: clamp(50px, calc((150 / $Width) * 100vw), 150px);
+    bottom: clamp(100px, calc((200 / $Width) * 100vw), 200px);
     background: var(--C9);
     background-clip: text;
     -webkit-background-clip: text;
@@ -122,7 +122,16 @@ filter: blur(2px);
     }
 }
 
-
+.section1 .scroll{
+    position: absolute;
+    width: clamp(40px, calc((80 / $Width) * 100vw), 80px);
+    bottom: clamp(12.5px, calc((25 / $Width) * 100vw), 25px);
+    animation: logo 6s ease-in-out infinite;
+    @include max-tablette {
+        writing-mode: horizontal-tb;
+        bottom: clamp(200px, calc((300 / $Width) * 100vw), 300px);
+    }
+}
 
 .section1 .a1_left{
     position: relative;

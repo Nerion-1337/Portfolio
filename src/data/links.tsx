@@ -313,7 +313,7 @@ export const projets: projectProps[] = [
      }],
     url:"https://youtu.be/n0g97rHkMho",
     code:`${code}MiamMIam`,
-    text:(<>Projet Personnel: Application web de recette participatif permettant aux utilisateurs de gérer précisément leurs consommation macro et micro nutriment de leur plat favoris de façon journalier à mensuel.</>),
+    text:(<>Projet Personnel: Application web de recette participatif permettant aux utilisateurs de gérer précisément leurs consommation macro et micro nutriment de leur plat favoris de façon journalier à mensuel. <span className="objectif">Gestion API Google, Youtube, Stripe.</span></>),
     image:`${img}Miam-Miam.png`,
     icon:`${icon}Miam-Miam.svg`,
   },
