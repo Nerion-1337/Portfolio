@@ -104,7 +104,7 @@ export default function Section_1() {
       {/* - - - - - - - - - */}
       {/* - IMG SCROLL - */}
       {/* - - - - - - - - - */}
-      <img src="public\assets\scroll.png" alt="scroll" className="scroll" />
+      <img src=".\assets\scroll.png" alt="scroll" className="scroll" />
       {/* - - - - - - - - - */}
       {/* - LOGO FLOTANT - */}
       {/* - - - - - - - - - */}
