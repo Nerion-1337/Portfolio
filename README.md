@@ -10,9 +10,9 @@ Mon Portfolio de présentation.
 
 # Objectif
 
-- Animation travaillé
+- Animation travaillée
 - Pris d'information rapide et complète sur mon profil
-- Un code claire, évolutif et maintenable dans le temps.
+- Un code clair, évolutif et maintenable dans le temps.
 
 # Visiter
 
