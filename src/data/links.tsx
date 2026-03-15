@@ -32,7 +32,7 @@ import {
   SiThreedotjs,
 } from "react-icons/si";
 import { BiMap } from "react-icons/bi";
-import { IoMdSchool } from "react-icons/Io";
+import { IoMdSchool } from "react-icons/io";
 import { SiRedux } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
