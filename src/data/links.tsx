@@ -28,6 +28,8 @@ import {
   SiNextdotjs,
   SiJavascript,
   SiTailwindcss,
+  SiVite,
+  SiThreedotjs,
 } from "react-icons/si";
 import { BiMap } from "react-icons/bi";
 import { IoMdSchool } from "react-icons/Io";
@@ -476,6 +478,24 @@ export const projets: projectProps[] = [
     ),
     image: `${img}Miam-Miam.png`,
     icon: `${icon}Miam-Miam.svg`,
+  },
+    {
+    label: "Portfolio 2026",
+    framework: [
+      {
+        icon: [FaReact, SiVite, SiTypescript, SiTailwindcss, SiThreedotjs ],
+        name: ["react", "vite", "typescript", "tailwindcss", "three.js"],
+      },
+    ],
+    url: "https://portfolio-nerion.vercel.app/",
+    code: `${code}portfolio_2026`,
+    text: (
+      <>
+        Nous portforlio 2026, réalisé quelques mois après mon premier portfolio, est une vitrine de mes compétences actuelles en développement web. J'ai intégré des technologies modernes telles que React, Vite, TypeScript, Tailwind CSS et Three.js pour créer une expérience utilisateur immersive et interactive. Ce projet reflète mon évolution en tant que développeur et ma capacité à maîtriser les dernières tendances du développement web.
+      </>
+    ),
+    image: `${img}Portfolio_v2.png`,
+    icon: `${icon}Portfolio_v2.svg`,
   },
 ];
 
