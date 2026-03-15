@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+# L'action se déclenche quand on push sur la branche main
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Mettez la version que vous utilisez
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Compiler le projet
+        run: npm run build
+
+      - name: Déployer sur gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # ⚠️ IMPORTANT : mettez ./build si vous utilisez Create React App, ou ./dist pour Vite/Vue.
