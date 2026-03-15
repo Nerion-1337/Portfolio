@@ -43,8 +43,8 @@ export default function Section_2() {
   //
   // DATAS DYNAMIQUES
   //
-  const [data_projet, setData_projet] = useState(projets[13]);
-  const [data_wait, setData_wait] = useState(projets[13]);
+  const [data_projet, setData_projet] = useState(projets[14]);
+  const [data_wait, setData_wait] = useState(projets[14]);
   const choose_projet = (data: string) => {
     const projet = projets.find((projet) => projet.label === data);
     if (projet) {

@@ -491,7 +491,7 @@ export const projets: projectProps[] = [
     code: `${code}portfolio_2026`,
     text: (
       <>
-        Nous portforlio 2026, réalisé quelques mois après mon premier portfolio, est une vitrine de mes compétences actuelles en développement web. J'ai intégré des technologies modernes telles que React, Vite, TypeScript, Tailwind CSS et Three.js pour créer une expérience utilisateur immersive et interactive. Ce projet reflète mon évolution en tant que développeur et ma capacité à maîtriser les dernières tendances du développement web.
+        Nouvelle vitrine de mes compétences actuelles en développement web. J'ai intégré des technologies modernes telles que React, Vite, TypeScript, Tailwind et Three.js pour créer une expérience utilisateur immersive et interactive. Ce projet reflète mon évolution en tant que développeur et ma capacité à maîtriser les dernières tendances du développement web.
       </>
     ),
     image: `${img}Portfolio_v2.png`,
